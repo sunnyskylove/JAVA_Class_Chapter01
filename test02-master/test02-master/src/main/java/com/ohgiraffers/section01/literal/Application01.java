@@ -27,7 +27,6 @@ public class Application01 {
         /*목차. 4. 논리 형태의 값 출력*/
         System.out.println(true);
         System.out.println(false);      // true 혹은 false 값을 논리형이라 한다.
-        System.out.println(1+1);
 
 
 

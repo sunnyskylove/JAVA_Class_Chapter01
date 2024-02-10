@@ -30,8 +30,6 @@ public class Teamtest {
 //        System.out.println("2번째의 sum:"+ sum);
 
 
-
-
     }
 
 }
