@@ -16,12 +16,15 @@ public class Application03 {
 
         int isum = (int) (inum + lnum);
         System.out.println("isum = " + isum);
-        // 함께 가로 처리_(int) (inum + lnum);
+        // 함께 가로 처리_(int) (inum + lnum);       // 110이 나옴
 
         /* 목차. 1. long 형태의 값을 int 형으로 강제 형변환한다. */
         int isum2 = inum + (int) lnum;
         // 부분 강제형변환 가능하다는 말이다. (int)lnum
-
+        System.out.println("isum2 = " +inum+ lnum);
+        System.out.println("isum2 = " +(inum+lnum));
+        // 가로 안치면, 문자열 흡수되어 10100이 나옴
+        // 가로 하면, 계산되어 계산되어 110이 나옴
 
     }
 }

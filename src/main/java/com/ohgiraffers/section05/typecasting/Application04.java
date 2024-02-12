@@ -13,8 +13,8 @@ public class Application04 {
         /* 목차. 1. 의도하지 않은 데이터 손실 */
         int inum = 290;
         byte bnum = (byte) inum;
-        System.out.println("inum = " + inum);
-        System.out.println("bnum = " + bnum);
+        System.out.println("inum = " + inum);   // 큰 int값 출력했을때 정상으로 나옴
+        System.out.println("bnum = " + bnum);   // 작은 byte값으로 강제형변환하고 출력시 데이터 손상됨 알 수 있다.
         // bnum에서 데이터 손실된 내역 확인할 수 있다. (290->34)
 
 
@@ -24,8 +24,6 @@ public class Application04 {
 
         System.out.println("height = " + height);
         System.out.println("floorheight = " + floorheight); // 소수점 절삭에 이용할 수 있다. (175.5 -> 175)
-
-
 
     }
 }
