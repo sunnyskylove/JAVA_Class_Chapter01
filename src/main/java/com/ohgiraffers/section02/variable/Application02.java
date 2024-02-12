@@ -39,7 +39,7 @@ public class Application02 {
 
         /* 목차. 1-1-2. 문자를 취급하는 자료형 */
         /* 필기. 문자를 취급하는 자료형은 2가지가 있다. */
-        char ch;        //2byte
+        char ch;        //2byte,  문자1개
         char ch2;
 
 
@@ -52,7 +52,7 @@ public class Application02 {
 
 
         /* 목차. 1-1-4. 문자열을 취급하는 자료형 */
-        String str;     // 4byte(엄밀히 이야기하면 주소값은 4byte 정수형이다.)
+        String str;     // 4byte(엄밀히 이야기하면 주소값은 4byte 정수형이다.),  문자열
 
 
         /* 목차. 2. 변수에 값을 대입한다. (값 대입 및 초기화) */
@@ -60,7 +60,8 @@ public class Application02 {
         bnum  = 1;
         snum = 2;
         inum = 4;
-        lnum = 8L;       // 아무 문제 없는 것 같지만 사실 뒤에 대문자 L을 붙여야 한다. 그 이유는 뒤에 형변환에서 다룰 것이다. 보통 L은 대/소문자 상관없다.(다만 81로 보여서 대문자 작성)
+        lnum = 8L;   // 아무 문제 없는 것 같지만 사실 뒤에 대문자 L을 붙여야 한다. 그 이유는 뒤에 형변환에서 다룰 것이다.
+                     // 보통 L은 대/소문자 상관없다.(다만 81로 보여서 대문자로 작성_암묵적 룰!)
 
 
         /* 목차. 2-2. 실수를 취급하는 자료형에 값 대입 */
@@ -70,14 +71,14 @@ public class Application02 {
 
         /* 목차. 2-3. 문자를 취급하는 자료형에 값 대입 */
         ch = 'a';
-        ch = 97;        // 'a' 는 97은 숫자였지? 그래서 숫자로도 저장할 수 있다.
+        ch = 97;        // 'a' 는 97 숫자임(아스키 코드값). 그래서 숫자로도 저장할 수 있다. / '', "" 없이 그냥 나와 숫자 97
 
 
         /* 목차. 2-4. 논리를 취급하는 자료형에 값 대입 */
         isTrue = true;
         System.out.println("========isTrue=========");
         System.out.println(isTrue);
-        isTrue = false;     // true 혹은 false 중 한 가지의 값만 사용이 가능하다.
+        isTrue = false;     // 중요!! true 혹은 false 중 한 가지의 값만 사용이 가능하다.
         System.out.println("===========isTrue=================");
         System.out.println(isTrue);
 

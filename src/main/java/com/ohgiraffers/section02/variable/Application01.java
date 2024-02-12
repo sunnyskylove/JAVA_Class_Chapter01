@@ -14,11 +14,11 @@ public class Application01 {
 
         /* 목차. 1. 값에 의미를 부여하기 위한 목적 */
         System.out.println("==========값의 의미 부여 테스트=======");
-        System.out.println("보너스를 포함한 급여:" +(100000+20000)+"원");
+        System.out.println("보너스를 포함한 급여:" +(100000+20000)+"원");  //직접적으로 넣어서 출력
 
         int salary = 100000;
         int bonus = 20000;
-        System.out.println("수정 된 보너스를 포함한 급여:"+ (salary+ bonus)+"원");
+        System.out.println("수정 된 보너스를 포함한 급여:"+ (salary+ bonus)+"원");  //변수로 값을 생성함
 
         /* 목차. 2. 한 번 저장해둔 값을 재사용하기 위한 목적 */
         System.out.println("==========변수에 저장한 값을 재사용하는 테스트========");
@@ -32,7 +32,7 @@ public class Application01 {
         System.out.println("7번 고객에게 포인트를 1000포인트 지급하였습니다.");
         System.out.println("8번 고객에게 포인트를 1000포인트 지급하였습니다.");
         System.out.println("9번 고객에게 포인트를 1000포인트 지급하였습니다.");
-        System.out.println("10번 고객에게 포인트를 1000포인트 지급하였습니다.");
+        System.out.println("10번 고객에게 포인트를 1000포인트 지급하였습니다.");  // 고객번호 메겨서 한명씩 10개 일일이 출력
 //==========================================================================
         int point = 1000;
         System.out.println("1번 고객에게 포인트를 " + point + "포인트 지급하였습니다.");
@@ -44,7 +44,7 @@ public class Application01 {
         System.out.println("7번 고객에게 포인트를 " + point + "포인트 지급하였습니다.");
         System.out.println("8번 고객에게 포인트를 " + point + "포인트 지급하였습니다.");
         System.out.println("9번 고객에게 포인트를 " + point + "포인트 지급하였습니다.");
-        System.out.println("10번 고객에게 포인트를 " + point + "포인트 지급하였습니다.");
+        System.out.println("10번 고객에게 포인트를 " + point + "포인트 지급하였습니다."); //변수값 만들어서 출력!!(효율적)
 
         /* 목차. 3. 시간에 따라 변경되는 값을 저장하고 사용할 수 있다. */
         System.out.println("========변수에 저장 된 값 변경 테스트===========");
@@ -53,7 +53,7 @@ public class Application01 {
         sum = sum + 10;
         System.out.println("2번째 sum: " + sum);
         sum = sum + 10;
-        System.out.println("3번째 sum: " + sum);
+        System.out.println("3번째 sum: " + sum);  // 변수값은 1개라서, 누적 계산 되어 출력됨
 
 
 
