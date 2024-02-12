@@ -21,7 +21,7 @@ public class Application03 {
 
         System.out.println("======10과 20의 사칙연산 보기 좋게 출력하기=====");
         System.out.println("10과 20의 합:"+ (10+20)); // 괄호를 묶지 않으면 문자열 합치기가 일어나서 결과가 1020이 된다.
-        System.out.println("10과 20의 합:"+ 10+20);
+        System.out.println("10과 20의 합:"+ 10+20);     // 꼭 가로로 넣어야지 문자열과 합쳐지지 않음!!
 
 
 

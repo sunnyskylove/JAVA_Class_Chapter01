@@ -14,7 +14,7 @@ public class Application02 {
         System.out.println(123-23);
         System.out.println(123*10);
         System.out.println(123/10);
-        System.out.println(123 % 10); // mod 연산자
+        System.out.println(123 % 10); // mod 연산자, 따옴표없이는 바로 계산
 
         /* 목차. 1-2. 실수와 실수의 연산 */
         System.out.println("===========실수와 실수의 연산=============");
@@ -39,7 +39,7 @@ public class Application02 {
         System.out.println('a' - 'b');
         System.out.println('a' * 'b');
         System.out.println('a' / 'b');
-        System.out.println('a' % 'b');
+        System.out.println('a' % 'b');       // 문자도 숫자로 인식해서 아스키코드 값으로 계산됨
 
         /* 목차. 2-2. 문자와 정수의 연산 */
         System.out.println("=========문자와 정수의 연산=======");
@@ -49,7 +49,7 @@ public class Application02 {
         System.out.println('a' / 2);
         System.out.println('a' % 2);
         System.out.println("한국"+ 1);
-        System.out.println('안' + '녕');
+        System.out.println('안' + '녕');      // 문자도 숫자로 인식되서 아스키코드 값으로 계산됨
 
         /* 목차. 2-3. 문자와 실수의 연산*/
         System.out.println("==========문자와 실수의 연산=========");
@@ -60,8 +60,8 @@ public class Application02 {
         System.out.println('a' % 2.0);
 
         /* 필기.
-        여기서 결론은 문자는 내부적으로 숫자 취급을 한다는 것이다.
-        결국 지금까지 연산은 숫자끼리의 연산을 본 것이고, 숫자(정수 혹은 실수) 형태의 값은 사칙연산과 모드연산이 가능하다.
+            여기서 결론은 문자는 내부적으로 숫자 취급을 한다는 것이다.
+            결국 지금까지 연산은 숫자끼리의 연산을 본 것이고, 숫자(정수 혹은 실수) 형태의 값은 사칙연산과 모드연산이 가능하다.
                  */
 
         /* 목차. 3. 문자열의 연산 */
@@ -72,14 +72,14 @@ public class Application02 {
 //        System.out.println("hello" - "world"); 에러발생
 //        System.out.println("hello" * "world");
 //        System.out.println("hello" / "world");
-//        System.out.println("hello" % "world");
+//        System.out.println("hello" % "world");   // 문자열끼리는 +만 가능.
 
         /* 목차. 3-2. 문자열과 다른 형태의 값 연산 */
         System.out.println("========문자열과 다른 형태의 값 연산======");
         System.out.println("hellow" + 123);
         System.out.println("hello" + 123.456);
         System.out.println("hello" + 'a');
-        System.out.println("hello" + true);
+        System.out.println("hello" + true);         // "문자열"이 붙어있을땐 숫자가 아닌 문자로 흡수된다.
 
         /* 목차. 4. 논리 값 연산 */
         /* 목차. 4-1. 논리값과 논리값의 연산 */
@@ -88,14 +88,14 @@ public class Application02 {
 //        System.out.println(true - false);
 //        System.out.println(true * false);
 //        System.out.println(true / false);
-//        System.out.println(true % false);
+//        System.out.println(true % false);         //논리값은 계산 사칙연산 모두 다 안됨
 
         System.out.println("=========논리와 문자열의 연산=========");
         System.out.println(true + "a");
 //        System.out.println(true - "a");
 //        System.out.println(true * "a");
 //        System.out.println(true / "a");
-//        System.out.println(true % "a");
+//        System.out.println(true % "a");           // 얘도 마찬가지로 논리가 붙으면 안됨. 단, 섞이면 문자열처럼 +만 가능
 
 
 
